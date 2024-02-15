@@ -1,1 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table, th, td {
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            border-collapse: collapse;
+            font-size: 2.5em;
+        }
 
+        .mainDetails>summary {
+            list-style-type: none;
+            outline: none;
+            cursor: pointer;
+            border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+        }
+
+        .mainDetails>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .mainDetails>summary {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .mainDetails[open]>summary {
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+        }
+
+        .mainDetails[]>summary {
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .secondaryDetails>summary {
+            list-style-type: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .secondaryDetails>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .secondaryDetails>summary {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+
+        .secondaryDetails[open]>summary {
+            margin-bottom: 50px;
+        }
+
+        .secondaryDetails[]>summary {
+            margin-bottom: 50px;
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+    </style>
+    <body>
+<!---->
+<!--        <div id="openingsContainer"></div>-->
+<!---->
+<!--        <script>-->
+<!--            const data = [-->
+<!--                          {-->
+<!--                              "color": "White",-->
+<!--                              "volumes": [-->
+<!--                                          {-->
+<!--                                              "title": "A: Flank openings",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "Bird's Opening",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/djAl0axZOKs45EA41itr",-->
+<!--                                                                            "importText": "1. f4 (36 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/6wK5yZmQnDc",-->
+<!--                                                                            "sourceText": "Remote Chess Academy: The Most Underrated Chess Opening Part-2"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          },-->
+<!--                                          {-->
+<!--                                              "title": "B: Semi-Open Games other than the French Defence",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "Sicilian Defence",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/CE15x8VlWKFsFLSpds1F",-->
+<!--                                                                            "importText": "1. e4 c5 2. c3 (63 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/VxV8l3x7hOg",-->
+<!--                                                                            "sourceText": "GothamChess: CRUSH the Sicilian Defense: The ALAPIN"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          },-->
+<!--                                          {-->
+<!--                                              "title": "C: Open Games and the French Defence",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "Italian (Giuoco Piano, Evans Gambit, Hungarian Defence, and Two Knights)",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/sBefyXrP4QrrKXK2Sc0I",-->
+<!--                                                                            "importText": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 (39 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/hLFSufXxtuI",-->
+<!--                                                                            "sourceText": "GothamChess: WIN IN 8 MOVES | The Fried Liver Attack"-->
+<!--                                                                        },-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/nDNgu9crPwalwotSEAu0",-->
+<!--                                                                            "importText": "1. e4 e5 2. Nf3 d6 3. Bc4 h6 4. d4 exd4 5. c3 dxc3 6. Bxf7+ (98 moves)",-->
+<!--                                                                            "sourceText": "Happy Anchoys"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          },-->
+<!--                                          {-->
+<!--                                              "title": "D: Closed Games and Semi-Closed Games",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "Queen's Gambit",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/ge4ZW8Mdovex15Cx8zat",-->
+<!--                                                                            "importText": "1. d4 d5 2. c4 (32 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/mtsabsZ4wG4",-->
+<!--                                                                            "sourceText": "GothamChess: How To Play The Queen's Gambit"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          }-->
+<!--                                          ]-->
+<!--                          },-->
+<!--                          {-->
+<!--                              "color": "Black",-->
+<!--                              "volumes": [-->
+<!--                                          {-->
+<!--                                              "title": "C: Open Games and the French Defence",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "French Defence",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/CXS3h3Pyzvl1yWl5Q5SK",-->
+<!--                                                                            "importText": "1. e4 e6 2. d4 d5 3. e5 c5 (43 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/fJ5-GAFR0bQ",-->
+<!--                                                                            "sourceText": "Chessfactor: The French Defense | Advance Variation | Chess Openings | IM Andrey Ostrovskiy"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           },-->
+<!--                                                           {-->
+<!--                                                               "title": "Italian (Giuoco Piano, Evans Gambit, Hungarian Defence, and Two Knights)",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/Vzts1uv6PJTI5nkgB2Va",-->
+<!--                                                                            "importText": "1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 (43 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/Y6-RXOh50_w",-->
+<!--                                                                            "sourceText": "Remote Chess Academy: The BEST Chess Opening Against 1.e4 - Every Move is a Trap!"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          },-->
+<!--                                          {-->
+<!--                                              "title": "D: Closed Games and Semi-Closed Games",-->
+<!--                                              "openings": [-->
+<!--                                                           {-->
+<!--                                                               "title": "Queen's Pawn Game, etc.",-->
+<!--                                                               "data": [-->
+<!--                                                                        {-->
+<!--                                                                            "importLink": "https://openings-explorer.web.app/training/NnyQJR0frXjosmpOS7yR",-->
+<!--                                                                            "importText": "1. d4 e5 (34 moves)",-->
+<!--                                                                            "sourceLink": "https://youtu.be/w7r5mP6rw1w",-->
+<!--                                                                            "sourceText": "GothamChess: WIN IN 8 MOVES: The Englund Gambit"-->
+<!--                                                                        }-->
+<!--                                                                        ]-->
+<!--                                                           }-->
+<!--                                                           ]-->
+<!--                                          }-->
+<!--                                          ]-->
+<!--                          }-->
+<!--                          ];-->
+<!--                          const container = document.getElementById('openingsContainer');-->
+<!---->
+<!--                          function generateHTML(data) {-->
+<!--                              let html = '';-->
+<!--                              data.forEach(colorData => {-->
+<!--                                  html += `<details class="mainDetails"><summary style="margin-left:0vw; font-weight:bold; "><h3 style="font-size: 5.0em; display:inline">${colorData.color}</h3></summary>`;-->
+<!--                                  colorData.volumes.forEach(volume => {-->
+<!--                                      html += `<details class="mainDetails"><summary style="margin-left:2vw; font-weight:bold; "><h3 style="font-size: 4.0em; display:inline">${volume.title}</h3></summary>`;-->
+<!--                                      html += `</details>`;-->
+<!--                                  });-->
+<!--                                  html += `</details>`;-->
+<!--                              });-->
+<!--                              container.innerHTML = html;-->
+<!--                          }-->
+<!---->
+<!--            generateHTML(data);-->
+<!--        </script>-->
+
+
+        <div id="openingsContainer"></div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const container = document.getElementById('openingsContainer');
+
+                function generateHTML(data) {
+                    let html = '';
+                    data.forEach(colorData => {
+                        html += `<details class="mainDetails"><summary style="margin-left:0vw; font-weight:bold; "><h3 style="font-size: 5.0em; display:inline">${colorData.color}</h3></summary>`;
+                        colorData.volumes.forEach(volume => {
+                            html += `<details class="mainDetails"><summary style="margin-left:2vw; font-weight:bold; "><h3 style="font-size: 4.0em; display:inline">${volume.title}</h3></summary>`;
+                            html += `</details>`;
+                        });
+                        html += `</details>`;
+                    });
+                    container.innerHTML = html;
+                }
+
+                // Загрузить данные из JSON файла
+                fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    generateHTML(data);
+                })
+                .catch(error => console.error('Error fetching data:', error));
+            });
+        </script>
+    </body>
+</html>
