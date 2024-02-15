@@ -1,0 +1,124 @@
+[
+    {
+        "color": "White",
+        "volumes": [
+            {
+                "title": "A: Flank openings",
+                "openings": [
+                    {
+                        "title": "Bird's Opening",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/djAl0axZOKs45EA41itr",
+                                "importText": "1. f4 (36 moves)",
+                                "sourceLink": "https://youtu.be/6wK5yZmQnDc",
+                                "sourceText": "Remote Chess Academy: The Most Underrated Chess Opening Part-2"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "B: Semi-Open Games other than the French Defence",
+                "openings": [
+                    {
+                        "title": "Sicilian Defence",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/CE15x8VlWKFsFLSpds1F",
+                                "importText": "1. e4 c5 2. c3 (63 moves)",
+                                "sourceLink": "https://youtu.be/VxV8l3x7hOg",
+                                "sourceText": "GothamChess: CRUSH the Sicilian Defense: The ALAPIN"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "C: Open Games and the French Defence",
+                "openings": [
+                    {
+                        "title": "Italian (Giuoco Piano, Evans Gambit, Hungarian Defence, and Two Knights)",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/sBefyXrP4QrrKXK2Sc0I",
+                                "importText": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 (39 moves)",
+                                "sourceLink": "https://youtu.be/hLFSufXxtuI",
+                                "sourceText": "GothamChess: WIN IN 8 MOVES | The Fried Liver Attack"
+                            },
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/nDNgu9crPwalwotSEAu0",
+                                "importText": "1. e4 e5 2. Nf3 d6 3. Bc4 h6 4. d4 exd4 5. c3 dxc3 6. Bxf7+ (98 moves)",
+                                "sourceText": "Happy Anchoys"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "D: Closed Games and Semi-Closed Games",
+                "openings": [
+                    {
+                        "title": "Queen's Gambit",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/ge4ZW8Mdovex15Cx8zat",
+                                "importText": "1. d4 d5 2. c4 (32 moves)",
+                                "sourceLink": "https://youtu.be/mtsabsZ4wG4",
+                                "sourceText": "GothamChess: How To Play The Queen's Gambit"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "color": "Black",
+        "volumes": [
+            {
+                "title": "C: Open Games and the French Defence",
+                "openings": [
+                    {
+                        "title": "French Defence",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/CXS3h3Pyzvl1yWl5Q5SK",
+                                "importText": "1. e4 e6 2. d4 d5 3. e5 c5 (43 moves)",
+                                "sourceLink": "https://youtu.be/fJ5-GAFR0bQ",
+                                "sourceText": "Chessfactor: The French Defense | Advance Variation | Chess Openings | IM Andrey Ostrovskiy"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Italian (Giuoco Piano, Evans Gambit, Hungarian Defence, and Two Knights)",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/Vzts1uv6PJTI5nkgB2Va",
+                                "importText": "1. e4 e5 2. Nf3 Nc6 3. Bc4 f5 (43 moves)",
+                                "sourceLink": "https://youtu.be/Y6-RXOh50_w",
+                                "sourceText": "Remote Chess Academy: The BEST Chess Opening Against 1.e4 - Every Move is a Trap!"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "D: Closed Games and Semi-Closed Games",
+                "openings": [
+                    {
+                        "title": "Queen's Pawn Game, etc.",
+                        "data": [
+                            {
+                                "importLink": "https://openings-explorer.web.app/training/NnyQJR0frXjosmpOS7yR",
+                                "importText": "1. d4 e5 (34 moves)",
+                                "sourceLink": "https://youtu.be/w7r5mP6rw1w",
+                                "sourceText": "GothamChess: WIN IN 8 MOVES: The Englund Gambit"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
